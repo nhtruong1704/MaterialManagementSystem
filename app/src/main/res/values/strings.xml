@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">MaterialManagementSystem</string>
+    <string name="admin_login">ADMIN LOGIN</string>
+    <string name="name_project">Учет Материальных\n Средств</string>
+
 </resources>

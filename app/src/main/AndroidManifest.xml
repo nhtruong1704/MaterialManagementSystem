@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".EmployeeLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminLoginActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
