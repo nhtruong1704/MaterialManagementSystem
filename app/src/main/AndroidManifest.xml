@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".AdminMenuActivity"
+            android:exported="false" />
+        <activity
             android:name=".EmployeeLoginActivity"
             android:exported="false" />
         <activity

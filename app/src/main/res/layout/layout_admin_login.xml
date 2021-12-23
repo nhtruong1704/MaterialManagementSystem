@@ -42,7 +42,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edt_admin_login_password"
                 style="@style/modifiedEditText"
-                android:drawableStart="@drawable/ic_baseline_mail_outline_24"
+                android:drawableStart="@drawable/ic_baseline_lock_24"
                 android:hint="Password"
                 android:inputType="textPassword"
                 android:maxLines="1" />
