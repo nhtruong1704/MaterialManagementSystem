@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class AdminAddMaterialActivity extends AppCompatActivity {
+public class AdminImportMaterialActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_admin_add_material);
+        setContentView(R.layout.activity_admin_import_material);
     }
 }
