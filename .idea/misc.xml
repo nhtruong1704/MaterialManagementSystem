@@ -48,6 +48,29 @@
         <entry key="..\:/Users/Nhat Truong/AndroidStudioProjects/MaterialManagementSystem/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2760416666666667" />
         <entry key="..\:/Users/Nhat Truong/AndroidStudioProjects/MaterialManagementSystem/app/src/main/res/mipmap-hdpi/ic_launcher.xml" value="0.3651041666666667" />
         <entry key="..\:/Users/Nhat Truong/AndroidStudioProjects/MaterialManagementSystem/app/src/main/res/mipmap-hdpi/ic_launcher_round.xml" value="0.3651041666666667" />
+        <entry key="..\:/Users/daota/AndroidStudioProjects/MaterialManagementSystem/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.346875" />
+        <entry key="..\:/Users/daota/AndroidStudioProjects/MaterialManagementSystem/app/src/main/res/drawable/ic_baseline_arrow_back_ios_24.xml" value="0.346875" />
+        <entry key="..\:/Users/daota/AndroidStudioProjects/MaterialManagementSystem/app/src/main/res/drawable/ic_baseline_confirmation_number_24.xml" value="0.5646153846153846" />
+        <entry key="..\:/Users/daota/AndroidStudioProjects/MaterialManagementSystem/app/src/main/res/drawable/ic_baseline_date_range_24.xml" value="0.5646153846153846" />
+        <entry key="..\:/Users/daota/AndroidStudioProjects/MaterialManagementSystem/app/src/main/res/drawable/ic_baseline_phone_iphone_24.xml" value="0.5646153846153846" />
+        <entry key="..\:/Users/daota/AndroidStudioProjects/MaterialManagementSystem/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.5646153846153846" />
+        <entry key="..\:/Users/daota/AndroidStudioProjects/MaterialManagementSystem/app/src/main/res/drawable/ic_baseline_view_stream_24.xml" value="0.5646153846153846" />
+        <entry key="..\:/Users/daota/AndroidStudioProjects/MaterialManagementSystem/app/src/main/res/drawable/round_button.xml" value="0.346875" />
+        <entry key="..\:/Users/daota/AndroidStudioProjects/MaterialManagementSystem/app/src/main/res/layout/activity_admin_add_material.xml" value="0.5572916666666666" />
+        <entry key="..\:/Users/daota/AndroidStudioProjects/MaterialManagementSystem/app/src/main/res/layout/activity_admin_inventory.xml" value="0.5572916666666666" />
+        <entry key="..\:/Users/daota/AndroidStudioProjects/MaterialManagementSystem/app/src/main/res/layout/activity_admin_login.xml" value="0.5572916666666666" />
+        <entry key="..\:/Users/daota/AndroidStudioProjects/MaterialManagementSystem/app/src/main/res/layout/activity_admin_menu.xml" value="0.5572916666666666" />
+        <entry key="..\:/Users/daota/AndroidStudioProjects/MaterialManagementSystem/app/src/main/res/layout/activity_employee_menu.xml" value="0.5572916666666666" />
+        <entry key="..\:/Users/daota/AndroidStudioProjects/MaterialManagementSystem/app/src/main/res/layout/activity_main.xml" value="0.5572916666666666" />
+        <entry key="..\:/Users/daota/AndroidStudioProjects/MaterialManagementSystem/app/src/main/res/layout/admin_app_bar_main.xml" value="0.5572916666666666" />
+        <entry key="..\:/Users/daota/AndroidStudioProjects/MaterialManagementSystem/app/src/main/res/layout/admin_home.xml" value="0.5572916666666666" />
+        <entry key="..\:/Users/daota/AndroidStudioProjects/MaterialManagementSystem/app/src/main/res/layout/admin_nav_header.xml" value="0.5572916666666666" />
+        <entry key="..\:/Users/daota/AndroidStudioProjects/MaterialManagementSystem/app/src/main/res/layout/employee_nav_header.xml" value="0.5572916666666666" />
+        <entry key="..\:/Users/daota/AndroidStudioProjects/MaterialManagementSystem/app/src/main/res/layout/layout_admin_login.xml" value="0.5572916666666666" />
+        <entry key="..\:/Users/daota/AndroidStudioProjects/MaterialManagementSystem/app/src/main/res/layout/list_item_material.xml" value="0.5572916666666666" />
+        <entry key="..\:/Users/daota/AndroidStudioProjects/MaterialManagementSystem/app/src/main/res/layout/login_shape_bk.xml" value="0.5572916666666666" />
+        <entry key="..\:/Users/daota/AndroidStudioProjects/MaterialManagementSystem/app/src/main/res/menu/admin_nav_drawer_menu.xml" value="0.5572916666666666" />
+        <entry key="..\:/Users/daota/AndroidStudioProjects/MaterialManagementSystem/app/src/main/res/menu/employee_nav_drawer_menu.xml" value="0.5572916666666666" />
       </map>
     </option>
   </component>
