@@ -163,14 +163,7 @@ public class AdminMenuActivity extends AppCompatActivity {
         toggle.syncState();
     }
 
-    //Load Fragment
-//    private void loadFragment(Fragment fragment) {
-//        FragmentManager fragmentManager = getSupportFragmentManager();
-//        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-//        fragmentTransaction.replace(R.id.frame, fragment).commit();
-//        drawerLayout.closeDrawer(GravityCompat.START);
-//        fragmentTransaction.addToBackStack(null);
-//    }
+
 
     //Receive Data From Login
     private void receiveDataFromLogin() {

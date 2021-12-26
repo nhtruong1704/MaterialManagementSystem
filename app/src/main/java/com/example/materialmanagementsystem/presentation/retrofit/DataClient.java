@@ -1,6 +1,7 @@
 package com.example.materialmanagementsystem.presentation.retrofit;
 
 import com.example.materialmanagementsystem.presentation.model.Admin;
+import com.example.materialmanagementsystem.presentation.model.Material;
 
 import java.util.List;
 
@@ -72,14 +73,14 @@ public interface DataClient {
     @Multipart
     @POST("admin/uploadImage.php")
     Call<String> UploadAdminPhoto(@Part MultipartBody.Part photo);
-//
-//    @FormUrlEncoded
-//    @POST("admin/update.php")
-//    Call<String> UpdateAdminData(@Field("AdminId") String AdminId,
-//                                 @Field("AdminEmail") String AdminEmail,
-//                                 @Field("AdminName") String AdminName,
-//                                 @Field("AdminAvatar") String AdminAvatar,
-//                                 @Field("AdminCurrentAvatar") String AdminCurrentAvatar);
+
+    @FormUrlEncoded
+    @POST("admin/update.php")
+    Call<String> UpdateAdminData(@Field("AdminId") String AdminId,
+                                 @Field("AdminEmail") String AdminEmail,
+                                 @Field("AdminName") String AdminName,
+                                 @Field("AdminAvatar") String AdminAvatar,
+                                 @Field("AdminCurrentAvatar") String AdminCurrentAvatar);
 //
 //    @FormUrlEncoded
 //    @POST("admin/forgotPassword.php")
@@ -87,14 +88,14 @@ public interface DataClient {
 //                                         @Field("AdminEmail") String AdminEmail,
 //                                         @Field("AdminNewPassword") String AdminNewPassword);
 //
-//    @GET("admin/delete.php")
-//    Call<String> DeleteAdminData(@Query("AdminId") String AdminId, @Query("AdminAvatar") String AdminAvatar);
+    @GET("admin/delete.php")
+    Call<String> DeleteAdminData(@Query("AdminId") String AdminId, @Query("AdminAvatar") String AdminAvatar);
 //
-//    @FormUrlEncoded
-//    @POST("admin/changePassword.php")
-//    Call<String> ChangePasswordAdminData(@Field("AdminId") String AdminId,
-//                                         @Field("AdminNewPassword") String AdminNewPassword);
-//
+    @FormUrlEncoded
+    @POST("admin/changePassword.php")
+    Call<String> ChangePasswordAdminData(@Field("AdminId") String AdminId,
+                                         @Field("AdminNewPassword") String AdminNewPassword);
+
 //    //Admin Manager
 //    //Add Student
 //    @FormUrlEncoded
@@ -110,9 +111,9 @@ public interface DataClient {
 //                                     @Field("StudentActive") String StudentActive,
 //                                     @Field("StudentAvatar") String StudentAvatar);
 //
-//    //View All
-//    @POST("admin/viewAllStu.php")
-//    Call<List<Student>> AdminViewAllStudentData();
+    //View All
+    @POST("admin/viewAllMat.php")
+    Call<List<Material>> AdminViewAllMaterialData();
 //
 //    //Update
 //    @FormUrlEncoded

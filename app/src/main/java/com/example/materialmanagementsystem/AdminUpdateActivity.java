@@ -22,12 +22,11 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.materialmanagementsystem.presentation.model.Admin;
 import com.example.materialmanagementsystem.presentation.retrofit.APIUtils;
 import com.example.materialmanagementsystem.presentation.retrofit.DataClient;
 import com.squareup.picasso.Picasso;
-import com.xuancanh.studentinformationmanagementsystem.presentation.model.Admin;
-import com.xuancanh.studentinformationmanagementsystem.presentation.retrofit.APIUtils;
-import com.xuancanh.studentinformationmanagementsystem.presentation.retrofit.DataClient;
+
 
 import java.io.File;
 import java.io.FileNotFoundException;

@@ -11,10 +11,9 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.materialmanagementsystem.presentation.model.Admin;
+import com.example.materialmanagementsystem.presentation.retrofit.APIUtils;
 import com.example.materialmanagementsystem.presentation.retrofit.DataClient;
-import com.xuancanh.studentinformationmanagementsystem.presentation.model.Admin;
-import com.xuancanh.studentinformationmanagementsystem.presentation.retrofit.APIUtils;
-import com.xuancanh.studentinformationmanagementsystem.presentation.retrofit.DataClient;
 
 import java.util.ArrayList;
 
