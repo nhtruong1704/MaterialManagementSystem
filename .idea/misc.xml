@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Nhat Truong/AndroidStudioProjects/MaterialManagementSystem/app/src/main/res/drawable-v24/ic_baseline_delete_24.xml" value="0.3651041666666667" />
         <entry key="..\:/Users/Nhat Truong/AndroidStudioProjects/MaterialManagementSystem/app/src/main/res/drawable-v24/login_shape_bk.xml" value="0.27760416666666665" />
         <entry key="..\:/Users/Nhat Truong/AndroidStudioProjects/MaterialManagementSystem/app/src/main/res/drawable/admin.xml" value="0.28177083333333336" />
         <entry key="..\:/Users/Nhat Truong/AndroidStudioProjects/MaterialManagementSystem/app/src/main/res/drawable/ic_baseline_123_24.xml" value="0.3651041666666667" />
@@ -32,12 +33,15 @@
         <entry key="..\:/Users/Nhat Truong/AndroidStudioProjects/MaterialManagementSystem/app/src/main/res/drawable/menu_item_padding.xml" value="0.28177083333333336" />
         <entry key="..\:/Users/Nhat Truong/AndroidStudioProjects/MaterialManagementSystem/app/src/main/res/drawable/round_lock_24.xml" value="0.3651041666666667" />
         <entry key="..\:/Users/Nhat Truong/AndroidStudioProjects/MaterialManagementSystem/app/src/main/res/layout/activity_admin_add_material.xml" value="0.3489583333333333" />
-        <entry key="..\:/Users/Nhat Truong/AndroidStudioProjects/MaterialManagementSystem/app/src/main/res/layout/activity_admin_export_material.xml" value="0.3489583333333333" />
+        <entry key="..\:/Users/Nhat Truong/AndroidStudioProjects/MaterialManagementSystem/app/src/main/res/layout/activity_admin_change_password.xml" value="0.3489583333333333" />
+        <entry key="..\:/Users/Nhat Truong/AndroidStudioProjects/MaterialManagementSystem/app/src/main/res/layout/activity_admin_export_material.xml" value="0.25" />
+        <entry key="..\:/Users/Nhat Truong/AndroidStudioProjects/MaterialManagementSystem/app/src/main/res/layout/activity_admin_import_inventory.xml" value="0.3489583333333333" />
         <entry key="..\:/Users/Nhat Truong/AndroidStudioProjects/MaterialManagementSystem/app/src/main/res/layout/activity_admin_import_material.xml" value="0.3489583333333333" />
         <entry key="..\:/Users/Nhat Truong/AndroidStudioProjects/MaterialManagementSystem/app/src/main/res/layout/activity_admin_inventory.xml" value="0.3489583333333333" />
         <entry key="..\:/Users/Nhat Truong/AndroidStudioProjects/MaterialManagementSystem/app/src/main/res/layout/activity_admin_login.xml" value="0.5364583333333334" />
         <entry key="..\:/Users/Nhat Truong/AndroidStudioProjects/MaterialManagementSystem/app/src/main/res/layout/activity_admin_menu.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/Nhat Truong/AndroidStudioProjects/MaterialManagementSystem/app/src/main/res/layout/activity_admin_menu2.xml" value="0.2515625" />
+        <entry key="..\:/Users/Nhat Truong/AndroidStudioProjects/MaterialManagementSystem/app/src/main/res/layout/activity_admin_update.xml" value="0.3489583333333333" />
         <entry key="..\:/Users/Nhat Truong/AndroidStudioProjects/MaterialManagementSystem/app/src/main/res/layout/activity_employee_login.xml" value="0.4348958333333333" />
         <entry key="..\:/Users/Nhat Truong/AndroidStudioProjects/MaterialManagementSystem/app/src/main/res/layout/activity_employee_menu.xml" value="0.3489583333333333" />
         <entry key="..\:/Users/Nhat Truong/AndroidStudioProjects/MaterialManagementSystem/app/src/main/res/layout/activity_main.xml" value="0.5541666666666667" />
