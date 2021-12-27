@@ -32,7 +32,7 @@ public class AdminMenuActivity extends AppCompatActivity {
     Toolbar toolbar;
     NavigationView navigationView;
 
-    Button importMaterial, viewInventory, exportMaterial, reportInventory, btnHomeMenuLogout, btnAdminEdit;
+    Button importMaterial, viewMaterial, exportMaterial, reportMaterial, btnHomeMenuLogout, btnAdminEdit;
     ImageView ivAdminAvt, ivAdNavHeader;
     TextView tvAdminName, tvAdNavHeaderName, tvAdNavHeaderEmail;
     ArrayList<Admin> adminArr;
@@ -63,8 +63,8 @@ public class AdminMenuActivity extends AppCompatActivity {
             }
         });
 
-        //View Inventory Button
-        viewInventory.setOnClickListener(new View.OnClickListener() {
+        //View Material Button
+        viewMaterial.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(AdminMenuActivity.this, AdminViewMaterialActivity.class));
@@ -87,11 +87,11 @@ public class AdminMenuActivity extends AppCompatActivity {
             }
         });
 
-        //Button Report
-        reportInventory.setOnClickListener(new View.OnClickListener() {
+        //Button Report Material
+        reportMaterial.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(AdminMenuActivity.this, AdminReportInventoryActivity.class));
+                startActivity(new Intent(AdminMenuActivity.this, AdminReportMaterialActivity.class));
             }
         });
 
@@ -130,7 +130,7 @@ public class AdminMenuActivity extends AppCompatActivity {
                         drawerLayout.closeDrawer(GravityCompat.START);
                         break;
                     case R.id.it_ad_nav_dra_menu_report_inventory:
-                        startActivity(new Intent(AdminMenuActivity.this, AdminReportInventoryActivity.class));
+                        startActivity(new Intent(AdminMenuActivity.this, AdminReportMaterialActivity.class));
                         drawerLayout.closeDrawer(GravityCompat.START);
                         break;
                     case R.id.it_ad_nav_dra_menu_admin_profile:
@@ -163,7 +163,14 @@ public class AdminMenuActivity extends AppCompatActivity {
         toggle.syncState();
     }
 
-
+    //Load Fragment
+//    private void loadFragment(Fragment fragment) {
+//        FragmentManager fragmentManager = getSupportFragmentManager();
+//        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+//        fragmentTransaction.replace(R.id.frame, fragment).commit();
+//        drawerLayout.closeDrawer(GravityCompat.START);
+//        fragmentTransaction.addToBackStack(null);
+//    }
 
     //Receive Data From Login
     private void receiveDataFromLogin() {
@@ -178,9 +185,9 @@ public class AdminMenuActivity extends AppCompatActivity {
         tvAdminName = findViewById(R.id.tv_admin_name);
         btnHomeMenuLogout = findViewById(R.id.btn_ad_logout);
         importMaterial = findViewById(R.id.btn_ad_imp);
-        viewInventory = findViewById(R.id.btn_ad_inv);
+        viewMaterial = findViewById(R.id.btn_ad_inv);
         exportMaterial = findViewById(R.id.btn_ad_exp);
-        reportInventory = findViewById(R.id.btn_ad_rep);
+        reportMaterial = findViewById(R.id.btn_ad_rep);
         drawerLayout = findViewById(R.id.dl_admin_drawer);
         toolbar = findViewById(R.id.tb_admin_toolBar);
         navigationView = findViewById(R.id.nv_admin);

@@ -19,7 +19,7 @@
             android:name=".AdminUpdateActivity"
             android:exported="false" />
         <activity
-            android:name=".AdminReportInventoryActivity"
+            android:name=".AdminReportMaterialActivity"
             android:exported="false" />
         <activity
             android:name=".AdminViewMaterialActivity"

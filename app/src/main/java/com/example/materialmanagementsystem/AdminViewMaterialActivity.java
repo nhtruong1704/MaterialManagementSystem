@@ -43,7 +43,7 @@ public class AdminViewMaterialActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_admin_inventory);
+        setContentView(R.layout.activity_admin_view_material);
 
         //Search
         edtMatViewAllSearch = findViewById(R.id.edt_mat_search);
