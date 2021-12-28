@@ -3,8 +3,10 @@ package com.example.materialmanagementsystem.adapters;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,15 +15,22 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.materialmanagementsystem.R;
 import com.example.materialmanagementsystem.interfaces.ItemClickListener;
 import com.example.materialmanagementsystem.presentation.model.Material;
+import com.example.materialmanagementsystem.presentation.retrofit.APIUtils;
+import com.example.materialmanagementsystem.presentation.retrofit.DataClient;
 import com.squareup.picasso.Picasso;
 
 
 import java.util.ArrayList;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class MaterialListAdapter extends RecyclerView.Adapter<MaterialListAdapter.MaterialViewHolder> {
     //Form for adapter
@@ -61,7 +70,43 @@ public class MaterialListAdapter extends RecyclerView.Adapter<MaterialListAdapte
             @Override
             public void onClick(View view, int position, boolean isLongClick) {
                 if (isLongClick) {
-                    Toast.makeText(context, "Material " + material.getMatName(), Toast.LENGTH_SHORT).show();
+                    AlertDialog.Builder builder = new AlertDialog.Builder(view.getContext());
+                    builder.setIcon(R.drawable.ic_baseline_delete_24);
+                    builder.setTitle("Delete this material");
+                    builder.setMessage("Are you sure want to delete material " + material.getMatName() + "?");
+                    builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            DataClient dataClient = APIUtils.getData();
+                            retrofit2.Call<String> callback = dataClient.DeleteMaterialData(material.getMatId());
+                            callback.enqueue(new Callback<String>() {
+                                @Override
+                                public void onResponse(Call<String> call, Response<String> response) {
+                                    String res = response.body();
+                                    if (res.trim().equals("MATERIAL_DELETED_SUCCESSFUL")) {
+                                        Toast.makeText(context.getApplicationContext(), "Deleted material " + material.getMatName() + " Successfully", Toast.LENGTH_SHORT).show();
+
+                                    } else {
+                                        Log.d("Delete Err", res.trim());
+                                    }
+                                }
+
+                                @Override
+                                public void onFailure(Call<String> call, Throwable t) {
+                                    Log.d("Error Retrofit response", t.getMessage());
+                                }
+                            });
+                        }
+                    });
+                    builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+
+                        }
+                    });
+                    AlertDialog dialog = builder.create();
+                    dialog.show();
+
                 } else {
 //                    Intent intent = new Intent(view.getContext(), AdminMaterialViewProfileActivity.class);
 //
@@ -79,10 +124,13 @@ public class MaterialListAdapter extends RecyclerView.Adapter<MaterialListAdapte
     }
 
 
+
     @Override
     public int getItemCount() {
         return materialArr == null ? 0 : materialArr.size();
     }
+
+
 
 
     //Data ViewHolder class

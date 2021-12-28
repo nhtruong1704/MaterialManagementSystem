@@ -2,7 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/sv_ad_mat_add"
+    android:id="@+id/sv_ex_mat_add"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#fff"
@@ -19,7 +19,7 @@
             android:background="#fff">
 
             <ImageView
-                android:id="@+id/iv_ad_mat_add_exit"
+                android:id="@+id/iv_ad_mat_ex_exit"
                 android:layout_width="65dp"
                 android:layout_height="75dp"
                 android:padding="7dp"
@@ -36,28 +36,45 @@
                 android:textStyle="bold" />
         </RelativeLayout>
 
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/parent"
-            android:layout_marginTop="@dimen/loginViewsMargin">
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/edt_ad_mat_add_name"
-                style="@style/modifiedEditText"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="10dp"
                 android:drawableStart="@drawable/ic_baseline_storefront_24"
                 android:drawableTint="?attr/colorControlNormal"
-                android:hint="Material Name"
-                android:maxLines="1" />
-        </com.google.android.material.textfield.TextInputLayout>
+                android:text="Material Name: "
+                android:textSize="16dp"
+                android:textColor="@color/myColor8" />
+
+            <Spinner
+                android:id="@+id/sn_ex_mat_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+
+
 
         <com.google.android.material.textfield.TextInputLayout
             style="@style/parent"
             android:layout_marginTop="@dimen/loginViewsMargin">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/edt_ad_mat_add_no"
+                android:id="@+id/edt_ad_mat_ex_no"
                 style="@style/modifiedEditText"
                 android:drawableStart="@drawable/ic_baseline_more_24"
                 android:drawableTint="?attr/colorControlNormal"
+                android:drawablePadding="4dp"
+                android:inputType="none"
+                android:enabled="false"
                 android:hint="Material ID"
                 android:maxLines="1" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -67,11 +84,11 @@
             android:layout_marginTop="@dimen/loginViewsMargin">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/edt_ad_mat_add_dis"
+                android:id="@+id/edt_ad_mat_ex_cus"
                 style="@style/modifiedEditText"
                 android:drawableStart="@drawable/ic_baseline_person_24"
                 android:drawableTint="?attr/colorControlNormal"
-                android:hint="Distributors"
+                android:hint="Customer"
                 android:maxLines="1" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -82,7 +99,7 @@
             android:layout_marginTop="@dimen/loginViewsMargin">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/edt_ad_mat_add_phone"
+                android:id="@+id/edt_ad_mat_ex_phone"
                 style="@style/modifiedEditText"
                 android:drawableStart="@drawable/ic_baseline_phone_iphone_24"
                 android:drawableTint="?attr/colorControlNormal"
@@ -106,7 +123,7 @@
                 android:layout_marginTop="@dimen/loginViewsMargin">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/edt_ad_mat_add_date"
+                    android:id="@+id/edt_ad_mat_ex_date"
                     style="@style/modifiedEditText"
                     android:clickable="false"
 
@@ -121,7 +138,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <ImageButton
-                android:id="@+id/im_btn_ad_mat_add_del_dob"
+                android:id="@+id/im_btn_ad_mat_ex_del_dob"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_alignParentTop="true"
@@ -142,7 +159,7 @@
             android:layout_marginTop="@dimen/loginViewsMargin">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/edt_ad_mat_add_amo"
+                android:id="@+id/edt_ad_mat_ex_amo"
                 style="@style/modifiedEditText"
                 android:drawableStart="@drawable/ic_baseline_123_24"
                 android:drawableTint="?attr/colorControlNormal"
@@ -157,7 +174,7 @@
             android:layout_marginTop="@dimen/loginViewsMargin">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/edt_ad_mat_add_price"
+                android:id="@+id/edt_ad_mat_ex_price"
                 style="@style/modifiedEditText"
                 android:drawableStart="@drawable/ic_baseline_attach_money_24"
                 android:drawableTint="?attr/colorControlNormal"
@@ -172,7 +189,7 @@
             android:layout_marginTop="@dimen/loginViewsMargin">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/edt_ad_mat_add_total_cost"
+                android:id="@+id/edt_ad_mat_ex_total_cost"
                 style="@style/modifiedEditText"
                 android:drawableStart="@drawable/ic_baseline_calculate_24"
                 android:drawableTint="?attr/colorControlNormal"
@@ -191,7 +208,7 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/btn_ad_mat_add_save"
+                android:id="@+id/btn_ad_mat_ex_save"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="10dp"
@@ -199,7 +216,7 @@
                 android:theme="@style/AppTheme.MyButton1" />
 
             <Button
-                android:id="@+id/btn_ad_mat_add_exit"
+                android:id="@+id/btn_ad_mat_ex_exit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="10dp"

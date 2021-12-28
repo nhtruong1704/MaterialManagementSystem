@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.materialmanagementsystem" >
+    package="com.example.materialmanagementsystem">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -14,12 +14,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        android:usesCleartextTraffic="true" >
+        android:usesCleartextTraffic="true">
         <activity
             android:name=".AdminUpdateActivity"
             android:exported="false" />
         <activity
             android:name=".AdminReportMaterialActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminChangePasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminExportMaterialActivity"
             android:exported="false" />
         <activity
             android:name=".AdminViewMaterialActivity"
@@ -35,7 +41,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

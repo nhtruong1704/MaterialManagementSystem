@@ -50,8 +50,11 @@ public interface DataClient {
 //                                   @Field("StudentGender") String StudentGender,
 //                                   @Field("StudentCurrentAvatar") String StudentCurrentAvatar);
 //
-//    @GET("delete.php")
-//    Call<String> DeleteStudentData(@Query("StudentId") String StudentId, @Query("StudentAvatar") String StudentAvatar);
+    @GET("delete.php")
+    Call<String> DeleteMaterialData(@Query("MaterialId") String MaterialId);
+
+    @GET("update.php")
+    Call<String> UpdateMaterialData(@Query("MaterialId") String MaterialId, @Query("MaterialAmo") String MaterialAmo);
 //
 //    @FormUrlEncoded
 //    @POST("changePassword.php")
@@ -96,20 +99,30 @@ public interface DataClient {
     Call<String> ChangePasswordAdminData(@Field("AdminId") String AdminId,
                                          @Field("AdminNewPassword") String AdminNewPassword);
 
-//    //Admin Manager
-//    //Add Student
-//    @FormUrlEncoded
-//    @POST("admin/addStudent.php")
-//    Call<String> AdminAddStudentData(@Field("StudentNo") String StudentNo,
-//                                     @Field("StudentName") String StudentName,
-//                                     @Field("StudentDOB") String StudentDOB,
-//                                     @Field("StudentClass") String StudentClass,
-//                                     @Field("StudentGender") String StudentGender,
-//                                     @Field("StudentPhone") String StudentPhone,
-//                                     @Field("StudentEmail") String StudentEmail,
-//                                     @Field("StudentPassword") String StudentPassword,
-//                                     @Field("StudentActive") String StudentActive,
-//                                     @Field("StudentAvatar") String StudentAvatar);
+    //Admin Manager
+    //Add Material
+    @FormUrlEncoded
+    @POST("admin/addMaterial.php")
+    Call<String> AdminAddMaterialData(@Field("MaterialName") String MaterialName,
+                                     @Field("MaterialNo") String MaterialNo,
+                                     @Field("MaterialDis") String MaterialDis,
+                                     @Field("MaterialPhone") String MaterialPhone,
+                                     @Field("MaterialImDate") String MaterialImDate,
+                                     @Field("MaterialAmo") String MaterialAmo,
+                                     @Field("MaterialUnPri") String MaterialUnPri,
+                                     @Field("MaterialTotalCost") String MaterialTotalCost);
+
+
+    @FormUrlEncoded
+    @POST("admin/exMaterial.php")
+    Call<String> AdminExMaterialData(@Field("MaterialName") String MaterialName,
+                                      @Field("MaterialNo") String MaterialNo,
+                                      @Field("MaterialCusName") String MaterialCusName,
+                                      @Field("MaterialCusPhone") String MaterialCusPhone,
+                                      @Field("MaterialExDate") String MaterialExDate,
+                                      @Field("MaterialAmo") String MaterialAmo,
+                                      @Field("MaterialUnPri") String MaterialUnPri,
+                                      @Field("MaterialTotalCost") String MaterialTotalCost);
 //
     //View All
     @POST("admin/viewAllMat.php")
