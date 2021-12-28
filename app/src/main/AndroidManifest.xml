@@ -19,9 +19,6 @@
             android:name=".AdminUpdateActivity"
             android:exported="false" />
         <activity
-            android:name=".AdminReportMaterialActivity"
-            android:exported="false" />
-        <activity
             android:name=".AdminChangePasswordActivity"
             android:exported="false" />
         <activity

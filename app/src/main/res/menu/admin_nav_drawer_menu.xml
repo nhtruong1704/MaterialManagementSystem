@@ -17,10 +17,7 @@
             android:id="@+id/it_ad_nav_dra_menu_export_material"
             android:icon="@drawable/ic_baseline_output_24"
             android:title="Export Material" />
-        <item
-            android:id="@+id/it_ad_nav_dra_menu_report_inventory"
-            android:icon="@drawable/ic_baseline_message_24"
-            android:title="Report Material" />
+
     </group>
     <item android:title="">
         <menu>

@@ -214,7 +214,11 @@ public class AdminExportMaterialActivity extends AppCompatActivity {
                 materialExDate = edtAdMatExExDate.getText().toString();
                 materialAmo = edtAdMatExAmo.getText().toString();
                 materialUnPri = edtAdMatExUnPri.getText().toString();
-                materialTotalCost = String.valueOf(Integer.parseInt(edtAdMatExAmo.getText().toString()) * Integer.parseInt(edtAdMatExUnPri.getText().toString()));
+
+                if(!isEmptyEditText(edtAdMatExAmo) && !isEmptyEditText(edtAdMatExUnPri)) {
+                    materialTotalCost = String.valueOf(Integer.parseInt(edtAdMatExAmo.getText().toString()) * Integer.parseInt(edtAdMatExUnPri.getText().toString()));
+                }
+
                 if (materialCusName.length() > 0 && amo <= total_amo) {
                     if(amo == total_amo) {
                         DataClient dataClient = APIUtils.getData();
